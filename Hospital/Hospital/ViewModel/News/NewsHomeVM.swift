@@ -13,6 +13,6 @@ class NewsHomeVM {
     
     func loadNewsTab() {
     
-        let tabs: Promise<NewsTab> =  RequestManager.request(router: Router.endPointwithoutValid(path: NewsRequest.getNewsTab, param: nil))
+        let tab: Promise<[NewsTab]> =  RequestManager.request(router: Router.endPointwithoutValid(path: NewsRequest.getNewsTab, param: nil))
     }
 }

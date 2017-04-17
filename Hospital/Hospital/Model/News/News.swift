@@ -10,16 +10,15 @@ import Foundation
 import ObjectMapper
 
 class NewsTab: Model {
-    var newsTabId: String?
+    var newsTabId: Int?
     var title: String?
-    var type: String?
     
     override func mapping(map: Map) {
         newsTabId <- map["id"]
         title <- map["title"]
-        type <- map["type"]
     }
 }
-class  NewsColum: NSObject {
-    var group: [NewsTab]?
+
+class QuestionContents: Model {
+    
 }

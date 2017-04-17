@@ -20,7 +20,6 @@ protocol ProcessProtocol{
 }
 
 extension ProcessProtocol {
-    /// http://111.26.203.161:8888/zsfy/interfaceConsultation!getDoctorConsultation.action?userId=232&answerUserId=2&currentPage=1
     func URL() -> String {
         return baseURL + interface + "!" + action + ".action?"
     }
@@ -71,17 +70,46 @@ class RequestManager {
                 case .success(let value):
                     guard let json = value as? [String: Any] else { return }
                     print(json)
-                    guard  let baseResponseObject = Mapper<BaseResponseObject<T>>().map(JSON: json)else { return }
+                    guard  let baseResponseObject = Mapper<BaseResponseObject>().map(JSON: json)else { return }
                     if baseResponseObject.isError {
                         let error = NSError(domain: baseResponseObject.errorType.title, code: Int(baseResponseObject.errorType.rawValue) ?? 0, userInfo: nil)
                         print("******server data response error*****")
                         print(error.localizedDescription)
                         reject(error as Error)
                     } else {
-                        guard let result = baseResponseObject.result else { return }
+                        guard let result = baseResponseObject.result, let obj = Mapper<T>().map(JSONString: result) else { return }
+                        print(obj)
+                        fullfill(obj)
+                    }
+                case .failure(let error):
+                    print("*******failre closure error*********")
+                    print(error.localizedDescription)
+                    reject(error)
+                }
+            })
+        }
+    }
+    
+    static func request<T: Mappable>(router: Router) -> Promise<[T]> {
+        return Promise { fullfill, reject in
+            Alamofire.request((router.urlRequest?.url)!, method: router.method, parameters: router.param?.toJSON(), encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    guard let json = value as? [String: Any] else { return }
+                    print(json)
+                    guard  let baseResponseObject = Mapper<BaseResponseObject>().map(JSON: json)else { return }
+                    
+                    if baseResponseObject.isError {
+                        let error = NSError(domain: baseResponseObject.errorType.title, code: Int(baseResponseObject.errorType.rawValue) ?? 0, userInfo: nil)
+                        print("******server data response error*****")
+                        print(error.localizedDescription)
+                        reject(error as Error)
+                    } else {
                         print("********success*********")
-                        print(result)
-                        fullfill(result)
+                        guard let result = baseResponseObject.result, let objectArray = Mapper<T>().mapArray(JSONString: result)
+                          else { return }
+                        print(objectArray)
+                        fullfill(objectArray)
                     }
                 case .failure(let error):
                     print("*******failre closure error*********")

@@ -9,11 +9,11 @@
 import Foundation
 import ObjectMapper
 
-class BaseResponseObject<T: Mappable>: Model {
+class BaseResponseObject: Model {
     var isError: Bool = false
     var errorType: ErrorType = .noError
     var errorMessage: String?
-    var result: T?
+    var result: String?
     
     override func mapping(map: Map) {
         isError <- map["error"]

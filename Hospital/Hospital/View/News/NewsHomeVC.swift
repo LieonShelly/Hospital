@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ObjectMapper
+import PromiseKit
 
 class NewsHomeVC: BaseViewController {
 
@@ -14,7 +16,7 @@ class NewsHomeVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        newsVM.loadNewsTab()
+    
     }
 
 }

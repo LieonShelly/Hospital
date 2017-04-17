@@ -25,3 +25,24 @@ enum NewsRequest: UserProcess {
         }
     }
 }
+
+/// interfaceQuestionnaire
+
+enum QuestionnaireRequest: UserProcess {
+    case getQuesitionPager
+    case getNewsList
+    
+    var interface: String {
+        return "interfaceQuestionnaire"
+    }
+    
+    var action: String {
+        switch self {
+        case .getQuesitionPager:
+            return "getPageQuestion"
+        case .getNewsList:
+            return "getNews"
+        }
+    }
+}
+
