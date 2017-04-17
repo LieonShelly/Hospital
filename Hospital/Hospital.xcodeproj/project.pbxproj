@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
+		CD6F36151EA4AFCC00EF77DC /* ClassRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */; };
+		CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */; };
+		CD6F36171EA4AFCC00EF77DC /* Medical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36091EA4AFCC00EF77DC /* Medical.storyboard */; };
+		CD6F36181EA4AFCC00EF77DC /* MyCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F360B1EA4AFCC00EF77DC /* MyCenter.storyboard */; };
+		CD6F36191EA4AFCC00EF77DC /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F360D1EA4AFCC00EF77DC /* News.storyboard */; };
 		CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */; };
-		CDB8B4B21EA387C1009680F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B11EA387C1009680F2 /* ViewController.swift */; };
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
 		CDB8B4BD1EA387C1009680F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */; };
@@ -20,9 +24,13 @@
 		0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassRoom.storyboard; sourceTree = "<group>"; };
+		CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
+		CD6F36091EA4AFCC00EF77DC /* Medical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Medical.storyboard; sourceTree = "<group>"; };
+		CD6F360B1EA4AFCC00EF77DC /* MyCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCenter.storyboard; sourceTree = "<group>"; };
+		CD6F360D1EA4AFCC00EF77DC /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		CDB8B4AC1EA387C1009680F2 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDB8B4B11EA387C1009680F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDB8B4B41EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDB8B4B71EA387C1009680F2 /* Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hospital.xcdatamodel; sourceTree = "<group>"; };
 		CDB8B4BC1EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +67,178 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CD6F35FB1EA4AFCC00EF77DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F35FC1EA4AFCC00EF77DC /* ClassRoom */,
+				CD6F35FD1EA4AFCC00EF77DC /* Forum */,
+				CD6F35FE1EA4AFCC00EF77DC /* Main */,
+				CD6F35FF1EA4AFCC00EF77DC /* Medical */,
+				CD6F36001EA4AFCC00EF77DC /* MyCenter */,
+				CD6F36011EA4AFCC00EF77DC /* News */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6F35FC1EA4AFCC00EF77DC /* ClassRoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClassRoom;
+			sourceTree = "<group>";
+		};
+		CD6F35FD1EA4AFCC00EF77DC /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		CD6F35FE1EA4AFCC00EF77DC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD6F35FF1EA4AFCC00EF77DC /* Medical */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medical;
+			sourceTree = "<group>";
+		};
+		CD6F36001EA4AFCC00EF77DC /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyCenter;
+			sourceTree = "<group>";
+		};
+		CD6F36011EA4AFCC00EF77DC /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CD6F36021EA4AFCC00EF77DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F36031EA4AFCC00EF77DC /* ClassRoom */,
+				CD6F36051EA4AFCC00EF77DC /* Forum */,
+				CD6F36071EA4AFCC00EF77DC /* Main */,
+				CD6F36081EA4AFCC00EF77DC /* Medical */,
+				CD6F360A1EA4AFCC00EF77DC /* MyCenter */,
+				CD6F360C1EA4AFCC00EF77DC /* News */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD6F36031EA4AFCC00EF77DC /* ClassRoom */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */,
+			);
+			path = ClassRoom;
+			sourceTree = "<group>";
+		};
+		CD6F36051EA4AFCC00EF77DC /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		CD6F36071EA4AFCC00EF77DC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CDB8B4B31EA387C1009680F2 /* Main.storyboard */,
+				CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD6F36081EA4AFCC00EF77DC /* Medical */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F36091EA4AFCC00EF77DC /* Medical.storyboard */,
+			);
+			path = Medical;
+			sourceTree = "<group>";
+		};
+		CD6F360A1EA4AFCC00EF77DC /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F360B1EA4AFCC00EF77DC /* MyCenter.storyboard */,
+			);
+			path = MyCenter;
+			sourceTree = "<group>";
+		};
+		CD6F360C1EA4AFCC00EF77DC /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F360D1EA4AFCC00EF77DC /* News.storyboard */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CD6F360E1EA4AFCC00EF77DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F360F1EA4AFCC00EF77DC /* ClassRoom */,
+				CD6F36101EA4AFCC00EF77DC /* Forum */,
+				CD6F36111EA4AFCC00EF77DC /* Main */,
+				CD6F36121EA4AFCC00EF77DC /* Medical */,
+				CD6F36131EA4AFCC00EF77DC /* MyCenter */,
+				CD6F36141EA4AFCC00EF77DC /* News */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD6F360F1EA4AFCC00EF77DC /* ClassRoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClassRoom;
+			sourceTree = "<group>";
+		};
+		CD6F36101EA4AFCC00EF77DC /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		CD6F36111EA4AFCC00EF77DC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD6F36121EA4AFCC00EF77DC /* Medical */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medical;
+			sourceTree = "<group>";
+		};
+		CD6F36131EA4AFCC00EF77DC /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyCenter;
+			sourceTree = "<group>";
+		};
+		CD6F36141EA4AFCC00EF77DC /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		CDB8B4A31EA387C1009680F2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,9 +261,9 @@
 			isa = PBXGroup;
 			children = (
 				CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */,
-				CDB8B4B11EA387C1009680F2 /* ViewController.swift */,
-				CDB8B4B31EA387C1009680F2 /* Main.storyboard */,
-				CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */,
+				CD6F35FB1EA4AFCC00EF77DC /* Model */,
+				CD6F36021EA4AFCC00EF77DC /* View */,
+				CD6F360E1EA4AFCC00EF77DC /* ViewModel */,
 				CDB8B4BE1EA387C1009680F2 /* Info.plist */,
 				CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */,
 				CDFB150D1EA3BBCA00D89C04 /* Assets.xcassets */,
@@ -154,7 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB8B4BD1EA387C1009680F2 /* LaunchScreen.storyboard in Resources */,
+				CD6F36181EA4AFCC00EF77DC /* MyCenter.storyboard in Resources */,
+				CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */,
+				CD6F36191EA4AFCC00EF77DC /* News.storyboard in Resources */,
+				CD6F36171EA4AFCC00EF77DC /* Medical.storyboard in Resources */,
 				CDFB150E1EA3BBCA00D89C04 /* Assets.xcassets in Resources */,
+				CD6F36151EA4AFCC00EF77DC /* ClassRoom.storyboard in Resources */,
 				CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB8B4B21EA387C1009680F2 /* ViewController.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
 			);
@@ -229,6 +413,7 @@
 				CDB8B4B41EA387C1009680F2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */ = {
@@ -237,6 +422,7 @@
 				CDB8B4BC1EA387C1009680F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
