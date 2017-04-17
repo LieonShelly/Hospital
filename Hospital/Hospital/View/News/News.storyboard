@@ -12,7 +12,7 @@
         <!--新闻-->
         <scene sceneID="3o7-78-NdA">
             <objects>
-                <viewController id="Vmh-Dy-b8T" sceneMemberID="viewController">
+                <viewController id="Vmh-Dy-b8T" customClass="NewsHomeVC" customModule="Hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="54K-wT-tYb"/>
                         <viewControllerLayoutGuide type="bottom" id="Y6G-AP-MJs"/>
@@ -35,7 +35,7 @@
                     <tabBarItem key="tabBarItem" title="新闻" image="tab_icon_news_normal" selectedImage="tab_icon_news_pressed" id="RcD-7u-eGg"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="Hf5-It-4Vl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Hf5-It-4Vl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.94509803920000002" green="0.60392156860000001" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
