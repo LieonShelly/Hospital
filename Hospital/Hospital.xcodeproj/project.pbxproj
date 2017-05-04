@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
+		CD69004B1EB9D74500157850 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69004A1EB9D74500157850 /* Hero.swift */; };
 		CD6F36151EA4AFCC00EF77DC /* ClassRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */; };
 		CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */; };
 		CD6F36171EA4AFCC00EF77DC /* Medical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36091EA4AFCC00EF77DC /* Medical.storyboard */; };
@@ -33,6 +34,7 @@
 		0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
+		CD69004A1EB9D74500157850 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassRoom.storyboard; sourceTree = "<group>"; };
 		CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
 		CD6F36091EA4AFCC00EF77DC /* Medical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Medical.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6F36281EA4C5BC00EF77DC /* News.swift */,
+				CD69004A1EB9D74500157850 /* Hero.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
+				CD69004B1EB9D74500157850 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

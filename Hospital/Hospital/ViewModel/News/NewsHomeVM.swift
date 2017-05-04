@@ -8,11 +8,23 @@
 
 import Foundation
 import PromiseKit
+import UIKit
+import RxSwift
 
 class NewsHomeVM {
+   lazy var examples: [Example] = [Example]()
     
     func loadNewsTab() {
     
-        let tab: Promise<[NewsTab]> =  RequestManager.request(router: Router.endPointwithoutValid(path: NewsRequest.getNewsTab, param: nil))
+        let _: Promise<[NewsTab]> =  RequestManager.request(router: Router.endPointwithoutValid(path: NewsRequest.getNewsTab, param: nil))
+    }
+    
+    func loadExamples(vc: UIViewController, callback: () -> ()) {
+        let numberExample = Example()
+        numberExample.name = "Numbers"
+        numberExample.handler = {
+            
+        }
+        examples.append(numberExample)
     }
 }

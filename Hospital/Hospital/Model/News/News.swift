@@ -22,3 +22,8 @@ class NewsTab: Model {
 class QuestionContents: Model {
     
 }
+
+class Example: Model {
+    var name: String?
+    var handler: (() -> ())?
+}

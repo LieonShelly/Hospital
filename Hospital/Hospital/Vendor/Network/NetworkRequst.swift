@@ -8,6 +8,22 @@
 
 import Foundation
 
+enum LocalHostHeroRequest: LocalHostProcess {
+    case getHeroes
+
+    
+    var interface: String {
+        return "/hero"
+    }
+    var action: String {
+        switch self {
+        case .getHeroes:
+            return "/getHeroes"
+        }
+    }
+
+}
+
 enum NewsRequest: UserProcess {
     case getNewsTab
     case getNewsList
