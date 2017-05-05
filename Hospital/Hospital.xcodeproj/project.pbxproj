@@ -23,6 +23,7 @@
 		CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */; };
 		CD6F362D1EA4C6AF00EF77DC /* NewsHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */; };
 		CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */; };
+		CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD814C221EBB253F0006E644 /* NumberVC.swift */; };
 		CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */; };
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHomeVC.swift; sourceTree = "<group>"; };
 		CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHomeVM.swift; sourceTree = "<group>"; };
+		CD814C221EBB253F0006E644 /* NumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
 		CDB8B4AC1EA387C1009680F2 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDB8B4B41EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				CD6F360D1EA4AFCC00EF77DC /* News.storyboard */,
 				CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */,
+				CD814C221EBB253F0006E644 /* NumberVC.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -436,7 +439,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AE3E8791AD1D8386F39CC61B /* [CP] Embed Pods Frameworks */ = {
@@ -473,6 +476,7 @@
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
 				CD69004B1EB9D74500157850 /* Hero.swift in Sources */,
+				CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,19 +12,19 @@ import UIKit
 import RxSwift
 
 class NewsHomeVM {
-   lazy var examples: [Example] = [Example]()
     
     func loadNewsTab() {
     
         let _: Promise<[NewsTab]> =  RequestManager.request(router: Router.endPointwithoutValid(path: NewsRequest.getNewsTab, param: nil))
     }
     
-    func loadExamples(vc: UIViewController, callback: () -> ()) {
+    func loadExamples(vc: UIViewController) -> Observable<[Example]> {
         let numberExample = Example()
         numberExample.name = "Numbers"
         numberExample.handler = {
-            
+            guard let numbervc = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "NumberVC") as? NumberVC else { return }
+            vc.navigationController?.pushViewController(numbervc, animated: true)
         }
-        examples.append(numberExample)
+      return  Observable<[Example]>.just([numberExample])
     }
 }

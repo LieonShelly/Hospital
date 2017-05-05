@@ -14,28 +14,35 @@ import RxDataSources
 
 class NewsHomeVC: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            tableView.delegate = self
-            tableView.dataSource = self
-        }
-    }
-    fileprivate var newsVM: NewsHomeVM = NewsHomeVM()
+    @IBOutlet weak var tableView: UITableView!
     
-    let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, Double>>()
+    fileprivate var newsVM: NewsHomeVM = NewsHomeVM()
+    var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
 
 }
 
-extension NewsHomeVC: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsVM.examples.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+extension NewsHomeVC {
+    fileprivate func setupUI() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let numberExample = Example()
+        numberExample.name = "Numbers"
+        let items = newsVM.loadExamples(vc: self)
+        items
+            .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
+                cell.textLabel?.text = element.name ?? ""
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+            .modelSelected(Example.self)
+            .subscribe(onNext:  { value in
+                value.handler?()
+            })
+            .disposed(by: disposeBag)
     }
 }
 
