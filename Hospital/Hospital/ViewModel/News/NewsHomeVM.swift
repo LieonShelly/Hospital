@@ -25,6 +25,12 @@ class NewsHomeVM {
             guard let numbervc = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "NumberVC") as? NumberVC else { return }
             vc.navigationController?.pushViewController(numbervc, animated: true)
         }
-      return  Observable<[Example]>.just([numberExample])
+        let simpleValid = Example()
+        simpleValid.name = "SimpleVaid"
+        simpleValid.handler = {
+            guard let simpleValidVC = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "SimpleValidationVC") as? SimpleValidationVC else { return }
+            vc.navigationController?.pushViewController(simpleValidVC, animated: true)
+        }
+      return  Observable<[Example]>.just([numberExample, simpleValid])
     }
 }

@@ -23,6 +23,7 @@
 		CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */; };
 		CD6F362D1EA4C6AF00EF77DC /* NewsHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */; };
 		CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */; };
+		CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */; };
 		CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD814C221EBB253F0006E644 /* NumberVC.swift */; };
 		CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */; };
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
@@ -47,9 +48,10 @@
 		CD6F36241EA4BE4F00EF77DC /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CD6F36261EA4C4C900EF77DC /* NetworkRequst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequst.swift; sourceTree = "<group>"; };
 		CD6F36281EA4C5BC00EF77DC /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../Model/Main/BaseViewController.swift; sourceTree = "<group>"; };
 		CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHomeVC.swift; sourceTree = "<group>"; };
 		CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHomeVM.swift; sourceTree = "<group>"; };
+		CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
 		CD814C221EBB253F0006E644 /* NumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
 		CDB8B4AC1EA387C1009680F2 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +124,6 @@
 				CD6F36201EA4BC9A00EF77DC /* BaseResponseObject.swift */,
 				CD6F36221EA4BDB100EF77DC /* Transform.swift */,
 				CD6F36241EA4BE4F00EF77DC /* Model.swift */,
-				CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -184,6 +185,7 @@
 			children = (
 				CDB8B4B31EA387C1009680F2 /* Main.storyboard */,
 				CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */,
+				CD6F362A1EA4C69200EF77DC /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 				CD6F360D1EA4AFCC00EF77DC /* News.storyboard */,
 				CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */,
 				CD814C221EBB253F0006E644 /* NumberVC.swift */,
+				CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				CD6F36231EA4BDB100EF77DC /* Transform.swift in Sources */,
 				CD6F36251EA4BE4F00EF77DC /* Model.swift in Sources */,
 				CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */,
+				CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,

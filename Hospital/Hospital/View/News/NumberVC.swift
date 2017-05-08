@@ -7,29 +7,22 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class NumberVC: UIViewController {
-
+class NumberVC: BaseViewController {
+    @IBOutlet weak var number1: UITextField!
+    @IBOutlet weak var number2: UITextField!
+    @IBOutlet weak var number3: UITextField!
+    
+    @IBOutlet weak var result: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        Observable.combineLatest(number1.rx.text.orEmpty, number2.rx.text.orEmpty, number3.rx.text.orEmpty) { (text1, text2, text3) -> Int in
+            return (Int(text1) ?? 0) + (Int(text2) ?? 0) + (Int(text3) ?? 0)
+            }.map { $0.description }.bind(to: result.rx.text).disposed(by: disposeBag)
+        
     }
-    */
-
 }

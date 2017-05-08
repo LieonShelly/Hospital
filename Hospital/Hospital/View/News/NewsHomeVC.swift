@@ -10,14 +10,13 @@ import UIKit
 import ObjectMapper
 import PromiseKit
 import RxSwift
-import RxDataSources
+import RxCocoa
 
 class NewsHomeVC: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     fileprivate var newsVM: NewsHomeVM = NewsHomeVM()
-    var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -43,6 +42,11 @@ extension NewsHomeVC {
                 value.handler?()
             })
             .disposed(by: disposeBag)
+        
+        tableView.rx.didEndDisplayingCell.subscribe(onNext: { (cell, indexpath) in
+            print(indexpath)
+        }).disposed(by: disposeBag)
+        
     }
 }
 
