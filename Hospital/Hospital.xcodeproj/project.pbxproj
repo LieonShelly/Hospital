@@ -29,6 +29,12 @@
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
 		CDB8B4BD1EA387C1009680F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */; };
+		CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */; };
+		CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE61EC1751000CEDFB3 /* GithubSignupViewModel.swift */; };
+		CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE81EC1A0B300CEDFB3 /* Protocol.swift */; };
+		CDD2ABEB1EC1AF5300CEDFB3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABEA1EC1AF5300CEDFB3 /* ActivityIndicator.swift */; };
+		CDD2ABED1EC1B1C500CEDFB3 /* DefaultImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABEC1EC1B1C500CEDFB3 /* DefaultImplement.swift */; };
+		CDD2ABEF1EC1B30E00CEDFB3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABEE1EC1B30E00CEDFB3 /* Extension.swift */; };
 		CDFB150E1EA3BBCA00D89C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFB150D1EA3BBCA00D89C04 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +65,12 @@
 		CDB8B4B71EA387C1009680F2 /* Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hospital.xcdatamodel; sourceTree = "<group>"; };
 		CDB8B4BC1EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDB8B4BE1EA387C1009680F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupVC.swift; sourceTree = "<group>"; };
+		CDD2ABE61EC1751000CEDFB3 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
+		CDD2ABE81EC1A0B300CEDFB3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		CDD2ABEA1EC1AF5300CEDFB3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		CDD2ABEC1EC1B1C500CEDFB3 /* DefaultImplement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImplement.swift; sourceTree = "<group>"; };
+		CDD2ABEE1EC1B30E00CEDFB3 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CDFB150D1EA3BBCA00D89C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +225,7 @@
 				CD6F362C1EA4C6AF00EF77DC /* NewsHomeVC.swift */,
 				CD814C221EBB253F0006E644 /* NumberVC.swift */,
 				CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */,
+				CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -269,6 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */,
+				CDD2ABE61EC1751000CEDFB3 /* GithubSignupViewModel.swift */,
+				CDD2ABEA1EC1AF5300CEDFB3 /* ActivityIndicator.swift */,
+				CDD2ABEC1EC1B1C500CEDFB3 /* DefaultImplement.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -279,6 +295,7 @@
 				CD6F361B1EA4B15500EF77DC /* Network */,
 				CD6F361C1EA4B16D00EF77DC /* Common */,
 				CD6F361D1EA4B16D00EF77DC /* Extension */,
+				CDD2ABE81EC1A0B300CEDFB3 /* Protocol.swift */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -302,6 +319,7 @@
 		CD6F361D1EA4B16D00EF77DC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CDD2ABEE1EC1B30E00CEDFB3 /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -477,9 +495,15 @@
 				CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
+				CDD2ABED1EC1B1C500CEDFB3 /* DefaultImplement.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
+				CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
+				CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */,
+				CDD2ABEF1EC1B30E00CEDFB3 /* Extension.swift in Sources */,
+				CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */,
 				CD69004B1EB9D74500157850 /* Hero.swift in Sources */,
+				CDD2ABEB1EC1AF5300CEDFB3 /* ActivityIndicator.swift in Sources */,
 				CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

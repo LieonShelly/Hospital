@@ -31,6 +31,12 @@ class NewsHomeVM {
             guard let simpleValidVC = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "SimpleValidationVC") as? SimpleValidationVC else { return }
             vc.navigationController?.pushViewController(simpleValidVC, animated: true)
         }
-      return  Observable<[Example]>.just([numberExample, simpleValid])
+        let GithubSignup = Example()
+        GithubSignup.name = "GithubSignup"
+        GithubSignup.handler = {
+            guard let githubSignupVC = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "GithubSignupVC") as? GithubSignupVC else { return }
+            vc.navigationController?.pushViewController(githubSignupVC, animated: true)
+        }
+      return  Observable<[Example]>.just([numberExample, simpleValid, GithubSignup])
     }
 }

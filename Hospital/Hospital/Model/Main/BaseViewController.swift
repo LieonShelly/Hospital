@@ -20,6 +20,7 @@ class BaseViewController: UIViewController {
     fileprivate func setupUI() {
         let backBarItem = UIBarButtonItem(title: "返回", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarItem
+         
     }
     
 
