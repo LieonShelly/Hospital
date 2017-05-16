@@ -77,22 +77,34 @@ class  GithubSignupViewModel {
                 API: GithubAPI,
                 service: GithubValidationService
         )) {
-        validatedUsername = input.username.flatMapLatest({ String -> Observable<ValidateResult> in
+        /// flatMapLatest 中的闭包是返回一个observble的序列
+        validatedUsername = input.username
+            .flatMapLatest({ String -> Observable<ValidateResult> in
+                /// observeOn 指定在某一线程中观察序列
             return dependency.service.validateUsername(String).observeOn(MainScheduler.instance)
+                /// 发生错误时直接返回错误信息
             .catchErrorJustReturn(ValidateResult.failed(message: "Error contacting server"))
-        }).shareReplay(1)
-        validatedPassword = input.password.map({ password -> ValidateResult in
+        })
+            .shareReplay(1)
+        
+        validatedPassword = input.password
+            /// map 闭包直接取出序列中的真实值，进行操作
+            .map({ password -> ValidateResult in
             return dependency.service.validtePassword(password)
-        }).shareReplay(1)
+        })
+            .shareReplay(1)
+        
         validatedRepeatPassword = Observable.combineLatest(input.password, input.repeatPassword, resultSelector: { (password, repearPassword) in
              return dependency.service.validteRepeatedPassword(password, repeatePassword: repearPassword)
         }).shareReplay(1)
+        
         let usernameAndPassword = Observable.combineLatest(input.username, input.password) { (username, password)  in
             return(username, password)
         }.shareReplay(1)
+        
         let signingIn = ActivityIndicator()
         self.signingin = signingIn.asObservable()
-        
+        /// withLatestFrom 将连个序列合成一个序列，合成的序列中一第二个序列的值为主
         signedin = input.signupTaps.withLatestFrom(usernameAndPassword).flatMapLatest { (username, password) in
             return dependency.API.signup(username: username, password: password).observeOn(MainScheduler.instance)
             .catchErrorJustReturn(false)

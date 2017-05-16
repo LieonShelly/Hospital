@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Face DectorVC-->
         <scene sceneID="UqI-lJ-gKx">
             <objects>
-                <viewController id="ey9-Gm-T0i" sceneMemberID="viewController">
+                <viewController id="ey9-Gm-T0i" customClass="FaceDectorVC" customModule="Hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L98-p8-diN"/>
                         <viewControllerLayoutGuide type="bottom" id="ZHn-B5-RlX"/>
@@ -20,13 +20,73 @@
                     <view key="view" contentMode="scaleToFill" id="pvt-zH-iI8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face-5" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-be-NKr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAr-Vr-WEq">
+                                <rect key="frame" x="225" y="538" width="75" height="30"/>
+                                <state key="normal" title="Button2"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9Z-1U-cxk">
+                                <rect key="frame" x="150" y="538" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYA-T8-Rik">
+                                <rect key="frame" x="300" y="538" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ3-on-UZO">
+                                <rect key="frame" x="0.0" y="538" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21f-KF-MDh">
+                                <rect key="frame" x="75" y="538" width="75" height="30"/>
+                                <state key="normal" title="Button1"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="bottom" secondItem="21f-KF-MDh" secondAttribute="bottom" id="76i-AN-CbH"/>
+                            <constraint firstItem="ZQ3-on-UZO" firstAttribute="width" secondItem="21f-KF-MDh" secondAttribute="width" id="BER-ss-Go7"/>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="leading" secondItem="t9Z-1U-cxk" secondAttribute="trailing" id="FbK-ZP-Fxp"/>
+                            <constraint firstItem="21f-KF-MDh" firstAttribute="leading" secondItem="ZQ3-on-UZO" secondAttribute="trailing" id="G6p-nJ-Zpm"/>
+                            <constraint firstAttribute="trailing" secondItem="AYA-T8-Rik" secondAttribute="trailing" id="Hdp-fZ-iDF"/>
+                            <constraint firstItem="t9Z-1U-cxk" firstAttribute="bottom" secondItem="21f-KF-MDh" secondAttribute="bottom" id="J5V-ne-vvI"/>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="width" secondItem="21f-KF-MDh" secondAttribute="width" id="K0T-NH-y0g"/>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="width" secondItem="21f-KF-MDh" secondAttribute="width" id="LGO-LH-jcL"/>
+                            <constraint firstItem="AYA-T8-Rik" firstAttribute="bottom" secondItem="21f-KF-MDh" secondAttribute="bottom" id="SA0-3Y-RSn"/>
+                            <constraint firstItem="ZQ3-on-UZO" firstAttribute="height" secondItem="21f-KF-MDh" secondAttribute="height" id="TrF-df-6l0"/>
+                            <constraint firstItem="ZQ3-on-UZO" firstAttribute="leading" secondItem="pvt-zH-iI8" secondAttribute="leading" id="UlZ-E0-ciS"/>
+                            <constraint firstItem="t9Z-1U-cxk" firstAttribute="leading" secondItem="21f-KF-MDh" secondAttribute="trailing" id="XND-cn-ehU"/>
+                            <constraint firstItem="t9Z-1U-cxk" firstAttribute="width" secondItem="21f-KF-MDh" secondAttribute="width" id="Y9y-06-t69"/>
+                            <constraint firstItem="AYA-T8-Rik" firstAttribute="height" secondItem="21f-KF-MDh" secondAttribute="height" id="YSD-CN-IwP"/>
+                            <constraint firstItem="AYA-T8-Rik" firstAttribute="width" secondItem="21f-KF-MDh" secondAttribute="width" id="aYu-BI-0du"/>
+                            <constraint firstItem="ZHn-B5-RlX" firstAttribute="top" secondItem="21f-KF-MDh" secondAttribute="bottom" constant="50" id="hXm-5d-qID"/>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="height" secondItem="21f-KF-MDh" secondAttribute="height" id="kDP-HL-YBu"/>
+                            <constraint firstItem="RAr-Vr-WEq" firstAttribute="leading" secondItem="t9Z-1U-cxk" secondAttribute="trailing" id="mgA-JY-IgC"/>
+                            <constraint firstItem="ZQ3-on-UZO" firstAttribute="bottom" secondItem="21f-KF-MDh" secondAttribute="bottom" id="mo8-08-NRT"/>
+                            <constraint firstItem="t9Z-1U-cxk" firstAttribute="leading" secondItem="21f-KF-MDh" secondAttribute="trailing" id="nz0-UJ-oIG"/>
+                            <constraint firstItem="t9Z-1U-cxk" firstAttribute="height" secondItem="21f-KF-MDh" secondAttribute="height" id="ucU-8R-fBW"/>
+                            <constraint firstItem="21f-KF-MDh" firstAttribute="leading" secondItem="ZQ3-on-UZO" secondAttribute="trailing" id="udB-Fs-pNP"/>
+                            <constraint firstItem="AYA-T8-Rik" firstAttribute="leading" secondItem="RAr-Vr-WEq" secondAttribute="trailing" id="zOp-NX-KqK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="98Q-NJ-P3Y"/>
+                    <connections>
+                        <outlet property="personImageView" destination="qWN-be-NKr" id="ngv-9p-Whs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvZ-76-iQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="824"/>
+            <point key="canvasLocation" x="2024.8" y="823.53823088455783"/>
         </scene>
         <!--孕妇课堂-->
         <scene sceneID="3h3-AB-kHv">
@@ -35,7 +95,7 @@
                     <tabBarItem key="tabBarItem" title="孕妇课堂" image="tab_icon_ask_normal" selectedImage="tab_icon_ask_pressed" id="EEs-Lv-sNH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="RFZ-Pf-VXn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="RFZ-Pf-VXn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.94509803920000002" green="0.60392156860000001" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,6 +111,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="face-5" width="750" height="507"/>
         <image name="tab_icon_ask_normal" width="25" height="24"/>
         <image name="tab_icon_ask_pressed" width="24" height="23"/>
     </resources>

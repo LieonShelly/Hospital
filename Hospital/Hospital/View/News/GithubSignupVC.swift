@@ -55,6 +55,12 @@ class GithubSignupVC: BaseViewController {
             print("User signed in \(signedIn)")
         })
             .disposed(by: disposeBag)
+        signupVM.signupEnable
+            .subscribe(onNext: { signed in
+            self.signupOutlet.isEnabled = signed
+            self.signupOutlet.alpha = signed ? 1.0 : 0.5
+        })
+            .disposed(by: disposeBag)
         let tap = UITapGestureRecognizer()
         tap.rx.event.subscribe(onNext: { [weak self] _ in
             self?.view.endEditing(true)

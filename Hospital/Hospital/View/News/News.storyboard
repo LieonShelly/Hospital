@@ -233,6 +233,64 @@
             </objects>
             <point key="canvasLocation" x="2871" y="-370"/>
         </scene>
+        <!--ImagePicker-->
+        <scene sceneID="JYu-9g-Orj">
+            <objects>
+                <viewController storyboardIdentifier="ImagePickerVC" id="gx1-oo-7gt" customClass="ImagePickerVC" customModule="Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wwH-gJ-Fjn"/>
+                        <viewControllerLayoutGuide type="bottom" id="VH8-td-yzl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvj-6H-GXF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-SU-hYH">
+                                <rect key="frame" x="20" y="108" width="335" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="983-rC-DPC"/>
+                                    <constraint firstAttribute="height" constant="250" id="zeA-p9-4Nc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr9-Gp-d9T">
+                                <rect key="frame" x="160" y="374" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-xR-Zox">
+                                <rect key="frame" x="163" y="421" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-1g-7Hg">
+                                <rect key="frame" x="170" y="467" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6BM-1g-7Hg" firstAttribute="top" secondItem="kgq-xR-Zox" secondAttribute="bottom" constant="16" id="9k2-un-ujO"/>
+                            <constraint firstItem="Qr9-Gp-d9T" firstAttribute="centerX" secondItem="CF5-SU-hYH" secondAttribute="centerX" id="BUr-sa-YpJ"/>
+                            <constraint firstItem="kgq-xR-Zox" firstAttribute="top" secondItem="Qr9-Gp-d9T" secondAttribute="bottom" constant="17" id="Bnz-Ee-KPD"/>
+                            <constraint firstItem="kgq-xR-Zox" firstAttribute="centerX" secondItem="Qr9-Gp-d9T" secondAttribute="centerX" id="Pen-YZ-Ctt"/>
+                            <constraint firstAttribute="trailing" secondItem="CF5-SU-hYH" secondAttribute="trailing" constant="20" id="Vrh-10-rrH"/>
+                            <constraint firstItem="6BM-1g-7Hg" firstAttribute="centerX" secondItem="kgq-xR-Zox" secondAttribute="centerX" id="fVg-XQ-pS9"/>
+                            <constraint firstItem="CF5-SU-hYH" firstAttribute="top" secondItem="wwH-gJ-Fjn" secondAttribute="bottom" constant="44" id="gx3-H0-xgm"/>
+                            <constraint firstItem="Qr9-Gp-d9T" firstAttribute="top" secondItem="CF5-SU-hYH" secondAttribute="bottom" constant="16" id="rnd-nG-3bv"/>
+                            <constraint firstItem="CF5-SU-hYH" firstAttribute="leading" secondItem="vvj-6H-GXF" secondAttribute="leading" constant="20" id="tS8-fU-DRn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImagePicker" id="jbD-Sa-aOl"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="Qr9-Gp-d9T" id="Jme-W0-Dr5"/>
+                        <outlet property="cropButton" destination="6BM-1g-7Hg" id="RUH-ok-BUH"/>
+                        <outlet property="galleryButton" destination="kgq-xR-Zox" id="nBL-qR-vwr"/>
+                        <outlet property="imageView" destination="CF5-SU-hYH" id="5wW-e3-gz7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yar-xl-9d8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="-107"/>
+        </scene>
         <!--新闻-->
         <scene sceneID="Q0S-el-gqR">
             <objects>

@@ -37,6 +37,12 @@ class NewsHomeVM {
             guard let githubSignupVC = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "GithubSignupVC") as? GithubSignupVC else { return }
             vc.navigationController?.pushViewController(githubSignupVC, animated: true)
         }
-      return  Observable<[Example]>.just([numberExample, simpleValid, GithubSignup])
+        let imagePicker = Example()
+        imagePicker.name = "ImagePicker"
+        imagePicker.handler = {
+            guard let imagePickerVC = UIStoryboard(name: "News", bundle: nil).instantiateViewController(withIdentifier: "ImagePickerVC") as? ImagePickerVC else { return }
+            vc.navigationController?.pushViewController(imagePickerVC, animated: true)
+        }
+      return  Observable<[Example]>.just([numberExample, simpleValid, GithubSignup, imagePicker])
     }
 }

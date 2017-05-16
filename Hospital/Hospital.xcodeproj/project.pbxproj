@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
+		CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */; };
 		CD69004B1EB9D74500157850 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69004A1EB9D74500157850 /* Hero.swift */; };
 		CD6F36151EA4AFCC00EF77DC /* ClassRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */; };
 		CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */; };
@@ -29,6 +30,7 @@
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
 		CDB8B4BD1EA387C1009680F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4BB1EA387C1009680F2 /* LaunchScreen.storyboard */; };
+		CDC64C5F1EC9A2D6004F594F /* FaceDectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC64C5E1EC9A2D6004F594F /* FaceDectorVC.swift */; };
 		CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */; };
 		CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE61EC1751000CEDFB3 /* GithubSignupViewModel.swift */; };
 		CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2ABE81EC1A0B300CEDFB3 /* Protocol.swift */; };
@@ -42,6 +44,7 @@
 		0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		CD69004A1EB9D74500157850 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassRoom.storyboard; sourceTree = "<group>"; };
 		CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		CDB8B4B71EA387C1009680F2 /* Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hospital.xcdatamodel; sourceTree = "<group>"; };
 		CDB8B4BC1EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDB8B4BE1EA387C1009680F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC64C5E1EC9A2D6004F594F /* FaceDectorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDectorVC.swift; sourceTree = "<group>"; };
 		CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupVC.swift; sourceTree = "<group>"; };
 		CDD2ABE61EC1751000CEDFB3 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
 		CDD2ABE81EC1A0B300CEDFB3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */,
+				CDC64C5E1EC9A2D6004F594F /* FaceDectorVC.swift */,
 			);
 			path = ClassRoom;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				CD814C221EBB253F0006E644 /* NumberVC.swift */,
 				CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */,
 				CDD2ABE41EC16A0A00CEDFB3 /* GithubSignupVC.swift */,
+				CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -493,12 +499,14 @@
 				CD6F36251EA4BE4F00EF77DC /* Model.swift in Sources */,
 				CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */,
 				CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */,
+				CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
 				CDD2ABED1EC1B1C500CEDFB3 /* DefaultImplement.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
+				CDC64C5F1EC9A2D6004F594F /* FaceDectorVC.swift in Sources */,
 				CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */,
 				CDD2ABEF1EC1B30E00CEDFB3 /* Extension.swift in Sources */,
 				CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */,
@@ -634,6 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies $(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.msh.-hospital.ios.Hospital";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -648,6 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies $(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.msh.-hospital.ios.Hospital";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
