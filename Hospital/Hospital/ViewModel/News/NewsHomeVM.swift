@@ -10,6 +10,7 @@ import Foundation
 import PromiseKit
 import UIKit
 import RxSwift
+import  CoreData
 
 class NewsHomeVM {
     
@@ -44,5 +45,27 @@ class NewsHomeVM {
             vc.navigationController?.pushViewController(imagePickerVC, animated: true)
         }
       return  Observable<[Example]>.just([numberExample, simpleValid, GithubSignup, imagePicker])
+    }
+    
+    func save() {
+        let user: User = User(context: (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext)
+        user.account = "accout@gmail.com"
+        user.password = "12345"
+        user.name = "lieon"
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    }
+    
+    func fectchUser() -> Observable<[User]>{
+       return Observable<[User]>.create {  obsever in
+            let request: NSFetchRequest<User> = User.fetchRequest()
+            guard let result =  try? ((UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext).fetch(request) else {
+            obsever.on(.completed)
+                return  Disposables.create()
+                }
+            obsever.on(.next(result))
+            return Disposables.create()
+        }
+      
+        
     }
 }
