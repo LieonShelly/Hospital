@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
 		CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */; };
+		CD454EA71EDF1DC800EB6E92 /* addressbook.proto in Resources */ = {isa = PBXBuildFile; fileRef = CD454EA61EDF1DC800EB6E92 /* addressbook.proto */; };
+		CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */; };
 		CD69004B1EB9D74500157850 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69004A1EB9D74500157850 /* Hero.swift */; };
 		CD6F36151EA4AFCC00EF77DC /* ClassRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */; };
 		CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */; };
@@ -45,6 +47,8 @@
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
+		CD454EA61EDF1DC800EB6E92 /* addressbook.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addressbook.proto; sourceTree = "<group>"; };
+		CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addressbook.proto.swift; sourceTree = "<group>"; };
 		CD69004A1EB9D74500157850 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		CD6F36041EA4AFCC00EF77DC /* ClassRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassRoom.storyboard; sourceTree = "<group>"; };
 		CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 				0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD454EA51EDF1DB900EB6E92 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */,
+				CD454EA61EDF1DC800EB6E92 /* addressbook.proto */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		CD6F35FB1EA4AFCC00EF77DC /* Model */ = {
@@ -352,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */,
+				CD454EA51EDF1DB900EB6E92 /* Client */,
 				CD6F35FB1EA4AFCC00EF77DC /* Model */,
 				CD6F36021EA4AFCC00EF77DC /* View */,
 				CD6F360E1EA4AFCC00EF77DC /* ViewModel */,
@@ -426,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB8B4BD1EA387C1009680F2 /* LaunchScreen.storyboard in Resources */,
+				CD454EA71EDF1DC800EB6E92 /* addressbook.proto in Resources */,
 				CD6F36181EA4AFCC00EF77DC /* MyCenter.storyboard in Resources */,
 				CD6F36161EA4AFCC00EF77DC /* Forum.storyboard in Resources */,
 				CD6F36191EA4AFCC00EF77DC /* News.storyboard in Resources */,
@@ -497,6 +512,7 @@
 				CD6F36291EA4C5BC00EF77DC /* News.swift in Sources */,
 				CD6F36231EA4BDB100EF77DC /* Transform.swift in Sources */,
 				CD6F36251EA4BE4F00EF77DC /* Model.swift in Sources */,
+				CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */,
 				CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */,
 				CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */,
 				CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */,
