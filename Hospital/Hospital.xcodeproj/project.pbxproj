@@ -28,6 +28,7 @@
 		CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */; };
 		CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */; };
 		CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD814C221EBB253F0006E644 /* NumberVC.swift */; };
+		CD87112E1EDFB61700DB48F3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD87112D1EDFB61700DB48F3 /* Test.swift */; };
 		CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */; };
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
@@ -66,6 +67,7 @@
 		CD6F362E1EA4C6DD00EF77DC /* NewsHomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsHomeVM.swift; sourceTree = "<group>"; };
 		CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
 		CD814C221EBB253F0006E644 /* NumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
+		CD87112D1EDFB61700DB48F3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		CDB8B4AC1EA387C1009680F2 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDB8B4B41EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */,
 				CD454EA61EDF1DC800EB6E92 /* addressbook.proto */,
+				CD87112D1EDFB61700DB48F3 /* Test.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				CD6F361F1EA4B45B00EF77DC /* RequestManager.swift in Sources */,
 				CD6F36291EA4C5BC00EF77DC /* News.swift in Sources */,
 				CD6F36231EA4BDB100EF77DC /* Transform.swift in Sources */,
+				CD87112E1EDFB61700DB48F3 /* Test.swift in Sources */,
 				CD6F36251EA4BE4F00EF77DC /* Model.swift in Sources */,
 				CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */,
 				CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */,

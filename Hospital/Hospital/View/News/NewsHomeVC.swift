@@ -20,6 +20,7 @@ class NewsHomeVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        Test().testPerson()
     }
 
 }
