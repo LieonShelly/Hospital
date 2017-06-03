@@ -9,6 +9,7 @@
 import Foundation
 
 class Test {
+    /*
     func testPerson() {
         let personBulider = Person.Builder()
         personBulider.email = "lieoncx@gmail.com"
@@ -22,5 +23,5 @@ class Test {
         address.people = [try! personBulider.build()]
         print(address)
 
-    }
+    }*/
 }
