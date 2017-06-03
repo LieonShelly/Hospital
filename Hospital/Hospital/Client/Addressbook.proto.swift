@@ -2,7 +2,7 @@
 /// Protobuf-swift version: 3.0.16
 /// Source file "addressbook.proto"
 /// Syntax "Proto2"
-
+/*
 import Foundation
 import ProtocolBuffers
 
@@ -1173,3 +1173,4 @@ extension AddressBook.Builder: GeneratedMessageBuilderProtocol {
 }
 
 // @@protoc_insertion_point(global_scope)
+ */
