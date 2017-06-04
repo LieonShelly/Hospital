@@ -7,9 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     var URLEscaped: String {
         return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+    }
+    
+}
+
+extension UIScreen {
+    static  var width: CGFloat {
+        return UIScreen.main.bounds.width
+    }
+    
+    static var height: CGFloat {
+        return UIScreen.main.bounds.height
     }
 }

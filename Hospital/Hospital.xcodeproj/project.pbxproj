@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
+		CD11EC601EE30F9B0012F88F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11EC5F1EE30F9B0012F88F /* CameraView.swift */; };
 		CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */; };
 		CD454EA71EDF1DC800EB6E92 /* addressbook.proto in Resources */ = {isa = PBXBuildFile; fileRef = CD454EA61EDF1DC800EB6E92 /* addressbook.proto */; };
 		CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */; };
@@ -29,6 +30,9 @@
 		CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */; };
 		CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD814C221EBB253F0006E644 /* NumberVC.swift */; };
 		CD87112E1EDFB61700DB48F3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD87112D1EDFB61700DB48F3 /* Test.swift */; };
+		CDA643E01EE2BEEE0082FC23 /* FristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */; };
+		CDA643E21EE2BF070082FC23 /* FirstSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */; };
+		CDA643E41EE2BF140082FC23 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643E31EE2BF140082FC23 /* StoryViewController.swift */; };
 		CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */; };
 		CDB8B4B51EA387C1009680F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB8B4B31EA387C1009680F2 /* Main.storyboard */; };
 		CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDB8B4B61EA387C1009680F2 /* Hospital.xcdatamodeld */; };
@@ -47,6 +51,7 @@
 		0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
+		CD11EC5F1EE30F9B0012F88F /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		CD454EA61EDF1DC800EB6E92 /* addressbook.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addressbook.proto; sourceTree = "<group>"; };
 		CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addressbook.proto.swift; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
 		CD814C221EBB253F0006E644 /* NumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
 		CD87112D1EDFB61700DB48F3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FristViewController.swift; sourceTree = "<group>"; };
+		CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubViewController.swift; sourceTree = "<group>"; };
+		CDA643E31EE2BF140082FC23 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		CDB8B4AC1EA387C1009680F2 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8B4AF1EA387C1009680F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDB8B4B41EA387C1009680F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -209,6 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				CD6F36061EA4AFCC00EF77DC /* Forum.storyboard */,
+				CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */,
+				CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */,
+				CDA643E31EE2BF140082FC23 /* StoryViewController.swift */,
+				CD11EC5F1EE30F9B0012F88F /* CameraView.swift */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -511,23 +523,27 @@
 			files = (
 				CD6F362D1EA4C6AF00EF77DC /* NewsHomeVC.swift in Sources */,
 				CD6F36211EA4BC9A00EF77DC /* BaseResponseObject.swift in Sources */,
+				CDA643E21EE2BF070082FC23 /* FirstSubViewController.swift in Sources */,
 				CD6F361F1EA4B45B00EF77DC /* RequestManager.swift in Sources */,
 				CD6F36291EA4C5BC00EF77DC /* News.swift in Sources */,
 				CD6F36231EA4BDB100EF77DC /* Transform.swift in Sources */,
 				CD87112E1EDFB61700DB48F3 /* Test.swift in Sources */,
 				CD6F36251EA4BE4F00EF77DC /* Model.swift in Sources */,
 				CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */,
+				CDA643E01EE2BEEE0082FC23 /* FristViewController.swift in Sources */,
 				CD6F362B1EA4C69200EF77DC /* BaseViewController.swift in Sources */,
 				CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */,
 				CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
+				CD11EC601EE30F9B0012F88F /* CameraView.swift in Sources */,
 				CDD2ABED1EC1B1C500CEDFB3 /* DefaultImplement.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
 				CDC64C5F1EC9A2D6004F594F /* FaceDectorVC.swift in Sources */,
 				CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */,
+				CDA643E41EE2BF140082FC23 /* StoryViewController.swift in Sources */,
 				CDD2ABEF1EC1B30E00CEDFB3 /* Extension.swift in Sources */,
 				CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */,
 				CD69004B1EB9D74500157850 /* Hero.swift in Sources */,
