@@ -10,6 +10,7 @@
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
 		CD11EC601EE30F9B0012F88F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11EC5F1EE30F9B0012F88F /* CameraView.swift */; };
 		CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */; };
+		CD3AA09D1EE5BD120018F780 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */; };
 		CD454EA71EDF1DC800EB6E92 /* addressbook.proto in Resources */ = {isa = PBXBuildFile; fileRef = CD454EA61EDF1DC800EB6E92 /* addressbook.proto */; };
 		CD454EA91EDF1EA200EB6E92 /* Addressbook.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */; };
 		CD69004B1EB9D74500157850 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69004A1EB9D74500157850 /* Hero.swift */; };
@@ -54,6 +55,7 @@
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
 		CD11EC5F1EE30F9B0012F88F /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
+		CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		CD454EA61EDF1DC800EB6E92 /* addressbook.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addressbook.proto; sourceTree = "<group>"; };
 		CD454EA81EDF1EA200EB6E92 /* Addressbook.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addressbook.proto.swift; sourceTree = "<group>"; };
 		CD69004A1EB9D74500157850 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				CDA643E31EE2BF140082FC23 /* StoryViewController.swift */,
 				CD11EC5F1EE30F9B0012F88F /* CameraView.swift */,
 				CD898C811EE5558600DCE834 /* AuthorizedManager.swift */,
+				CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */,
 				CDB8B4B01EA387C1009680F2 /* AppDelegate.swift in Sources */,
+				CD3AA09D1EE5BD120018F780 /* AuthorizationVC.swift in Sources */,
 				CDC64C5F1EC9A2D6004F594F /* FaceDectorVC.swift in Sources */,
 				CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */,
 				CDA643E41EE2BF140082FC23 /* StoryViewController.swift in Sources */,

@@ -83,8 +83,27 @@ extension StoryViewController {
     }
     
     fileprivate func checkAuthorized() {
-        
+            let cameraAuthorization = AuthorizedManager.checkAuthorization(with: .camera)
+        let micAuthorization = AuthorizedManager.checkAuthorization(with: .mic)
+        if cameraAuthorization && micAuthorization {
+            if cameraAuthorization {
+                cameraView.initCamera()
+                cameraView.configVideoRecording()
+                cameraView.startCapture()
+            }
+            if micAuthorization {
+                cameraView.configAudioRecording()
+            }
+            swipeup(enable: true)
+        } else {
+            let authorizationVC = AuthorizationVC()
+            authorizationVC.view.frame = view.bounds
+            view.addSubview(authorizationVC.view)
+            addChildViewController(authorizationVC)
+            swipeup(enable: false)
+        }
     }
+    
     @objc fileprivate func flashAction(btn: UIButton) {
         let mode = cameraView.flashStatusChange()
         let imags = [
@@ -129,6 +148,10 @@ extension StoryViewController {
             swipeDown?.direction = .down
             view.addGestureRecognizer(swipeDown!)
         }
+    }
+    
+    fileprivate func swipeup(enable: Bool) {
+        enable ? view.addGestureRecognizer(swipeUp!): view.removeGestureRecognizer(swipeUp!)
     }
 }
 
