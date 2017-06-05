@@ -30,6 +30,7 @@
 		CD7B185B1EC0689B008B61DB /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */; };
 		CD814C231EBB253F0006E644 /* NumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD814C221EBB253F0006E644 /* NumberVC.swift */; };
 		CD87112E1EDFB61700DB48F3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD87112D1EDFB61700DB48F3 /* Test.swift */; };
+		CD898C821EE5558600DCE834 /* AuthorizedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD898C811EE5558600DCE834 /* AuthorizedManager.swift */; };
 		CDA643E01EE2BEEE0082FC23 /* FristViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */; };
 		CDA643E21EE2BF070082FC23 /* FirstSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */; };
 		CDA643E41EE2BF140082FC23 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA643E31EE2BF140082FC23 /* StoryViewController.swift */; };
@@ -73,6 +74,7 @@
 		CD7B185A1EC0689B008B61DB /* SimpleValidationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
 		CD814C221EBB253F0006E644 /* NumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVC.swift; sourceTree = "<group>"; };
 		CD87112D1EDFB61700DB48F3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		CD898C811EE5558600DCE834 /* AuthorizedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedManager.swift; sourceTree = "<group>"; };
 		CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FristViewController.swift; sourceTree = "<group>"; };
 		CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubViewController.swift; sourceTree = "<group>"; };
 		CDA643E31EE2BF140082FC23 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */,
 				CDA643E31EE2BF140082FC23 /* StoryViewController.swift */,
 				CD11EC5F1EE30F9B0012F88F /* CameraView.swift */,
+				CD898C811EE5558600DCE834 /* AuthorizedManager.swift */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				CDD2ABE51EC16A0A00CEDFB3 /* GithubSignupVC.swift in Sources */,
 				CDA643E41EE2BF140082FC23 /* StoryViewController.swift in Sources */,
 				CDD2ABEF1EC1B30E00CEDFB3 /* Extension.swift in Sources */,
+				CD898C821EE5558600DCE834 /* AuthorizedManager.swift in Sources */,
 				CDD2ABE91EC1A0B300CEDFB3 /* Protocol.swift in Sources */,
 				CD69004B1EB9D74500157850 /* Hero.swift in Sources */,
 				CDD2ABEB1EC1AF5300CEDFB3 /* ActivityIndicator.swift in Sources */,

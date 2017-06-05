@@ -89,6 +89,97 @@ class CameraView: GPUImageView {
         moiveWriter?.encodingLiveVideo = true
     }
     
+    func configAudioRecording() {
+        let audioSetting = [
+            AVFormatIDKey: kAudioFormatMPEG4AAC,
+            AVNumberOfChannelsKey: 2,
+            AVSampleRateKey: 16000,
+            AVEncoderBitRateKey: 32000
+        ]
+        moiveWriter?.setHasAudioTrack(true, audioSettings: audioSetting)
+        videoCamera?.audioEncodingTarget = moiveWriter
+    }
+    
+    func rotateCamera() {
+        videoCamera?.rotateCamera()
+    }
+    
+    func pauseCamera() {
+        videoCamera?.pauseCapture()
+    }
+    
+    func resumeCamera() {
+        if let videoPath = currentVideoPath {
+            do {
+                try FileManager.default.removeItem(at: videoPath)
+                currentVideoPath = nil
+            } catch {
+                print("video delete failure")
+            }
+        }
+        if let photoPath = currentPhotoPath {
+            do {
+                try FileManager.default.removeItem(at: photoPath)
+                currentVideoPath = nil
+            } catch {
+                print("photo delete failure")
+            }
+        }
+        videoCamera?.resumeCameraCapture()
+        setVideoZoomFactor(zoom: 0)
+    }
+    
+    func finishRecording(complete: @escaping ((URL) -> Void)) {
+        moiveWriter?.finishRecording(completionHandler: { [weak self] in
+            DispatchQueue.main.async {
+                self?.beautifyFilter.removeTarget(self?.moiveWriter)
+                self?.videoCamera?.pauseCapture()
+                self?.moiveWriter = nil
+                if let path = self?.currentVideoPath {
+                    complete(path)
+                }
+            }
+        })
+    }
+    
+    func capturePhoto(complete: @escaping ((URL?) -> Void)) {
+        videoCamera?.capturePhotoAsImageProcessedUp(toFilter: beautifyFilter, with: .up, withCompletionHandler: { [weak self] (image, error) in
+            DispatchQueue.main.async {
+                self?.beautifyFilter.removeTarget(self?.moiveWriter)
+                self?.videoCamera?.pauseCapture()
+                self?.moiveWriter = nil
+                guard let img = image else {
+                    complete(nil)
+                    return
+                }
+                let imageData = UIImagePNGRepresentation(img)
+                self?.currentPhotoPath = self?.getPhtoFilePath()
+                do {
+                    try imageData?.write(to: self!.currentPhotoPath!)
+                    complete(self?.currentVideoPath)
+                } catch {
+                    complete(nil)
+                }
+            }
+        })
+    }
+    
+    func flashStatusChange() -> AVCaptureTorchMode {
+        if videoCamera!.inputCamera.hasFlash || videoCamera!.inputCamera.hasFlash {
+            return .auto
+        }
+        let rawValue = videoCamera!.inputCamera.torchMode.rawValue + 1
+        let mode = AVCaptureTorchMode(rawValue: rawValue + 1 > 3 ? 0: rawValue)!
+        do {
+            try videoCamera?.inputCamera.lockForConfiguration()
+            videoCamera?.inputCamera.torchMode = mode
+            videoCamera?.inputCamera.unlockForConfiguration()
+        } catch {
+            
+        }
+        return mode
+    }
+    
     func cameraSwitch(isOpen: Bool) {
         isOpen ? videoCamera?.startCapture(): videoCamera?.stopCapture()
     }
@@ -176,6 +267,17 @@ extension CameraView {
             
         }
         return URL.init(fileURLWithPath: filePath!)
+    }
+    
+    fileprivate func getPhtoFilePath() -> URL {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("storyphoto")
+        let filePath = path?.appending("/\(Int(Date().timeIntervalSince1970)).png")
+        do {
+            try FileManager.default.createDirectory(atPath: path!, withIntermediateDirectories: true, attributes: nil)
+        } catch {
+            print("********ERROR: getPhtoFilePath********")
+        }
+        return URL(fileURLWithPath: filePath!)
     }
 }
 
