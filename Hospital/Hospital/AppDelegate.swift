@@ -16,9 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        UITabBar.appearance().tintColor = UIColor.init(red: 241/255.0, green: 154/255.0, blue: 173/255.0, alpha: 1)
-    
+        setupUI()
+//        debugUI()
         return true
     }
 
@@ -75,3 +74,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    fileprivate func setupUI() {
+        UITabBar.appearance().tintColor = UIColor.init(red: 241/255.0, green: 154/255.0, blue: 173/255.0, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+    }
+    fileprivate func debugUI() {
+        let overlayClass = NSClassFromString("UIDebuggingInformationOverlay") as? UIWindow.Type
+        _ = overlayClass?.perform(NSSelectorFromString("prepareDebuggingOverlay"))
+        let overlay = overlayClass?.perform(NSSelectorFromString("overlay")).takeUnretainedValue() as? UIWindow
+        _ = overlay?.perform(NSSelectorFromString("toggleVisibility"))
+    }
+}
