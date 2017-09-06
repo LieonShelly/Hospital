@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pDv-Au-0Lg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pDv-Au-0Lg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,24 +21,9 @@
                     <view key="view" contentMode="scaleToFill" id="ffD-Xm-oIy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rro-VT-RNu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Rro-VT-RNu" secondAttribute="trailing" id="KPq-yR-6MM"/>
-                            <constraint firstItem="Rro-VT-RNu" firstAttribute="leading" secondItem="ffD-Xm-oIy" secondAttribute="leading" id="UdB-wT-Rct"/>
-                            <constraint firstAttribute="bottom" secondItem="Rro-VT-RNu" secondAttribute="bottom" id="fxS-wg-DsD"/>
-                            <constraint firstItem="Rro-VT-RNu" firstAttribute="top" secondItem="ffD-Xm-oIy" secondAttribute="top" id="k3b-Ml-hV7"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="新闻" id="E2T-gS-Vvo"/>
-                    <connections>
-                        <outlet property="tableView" destination="Rro-VT-RNu" id="dSP-KU-7lt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yW8-Yi-eDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

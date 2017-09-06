@@ -11,13 +11,26 @@ import CoreImage
 
 class FaceDectorVC: UIViewController {
     @IBOutlet weak var personImageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        personImageView.image = #imageLiteral(resourceName: "face-2")
-        faceDector()
+        
     }
 
+    @IBAction func uploadAction(_ sender: Any) {
+    
+//        _ = fileProvider.create(folder: "FTPTest", at: "/") { (error) in
+//            print("create:\(error.debugDescription)")
+//        }
+        
+//        let urlStr = Bundle.main.url(forResource: "test2.txt", withExtension: nil)
+//        let txtData = try? Data(contentsOf: urlStr!, options: Data.ReadingOptions.alwaysMapped)
+//       let handle = fileProvider.writeContents(path: "/test2.txt", contents: txtData!, atomically: true, overwrite: true) { (error) in
+//            print("writeContentserror:-----\(error.debugDescription )")
+//        }
+    }
+    
+    @IBAction func listAction(_ sender: Any) {
+    }
     private func faceDector() {
         guard let image = personImageView.image else {
             return

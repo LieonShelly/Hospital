@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		77ADD5F69EB9A423C5C6CCD0 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */; };
-		CD11EC601EE30F9B0012F88F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD11EC5F1EE30F9B0012F88F /* CameraView.swift */; };
 		CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */; };
 		CD3AA09D1EE5BD120018F780 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */; };
 		CD454EA71EDF1DC800EB6E92 /* addressbook.proto in Resources */ = {isa = PBXBuildFile; fileRef = CD454EA61EDF1DC800EB6E92 /* addressbook.proto */; };
@@ -53,7 +52,6 @@
 		0B07016F39F8F563381C8EFA /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		6FDD044AF4C567975D65C5E8 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8543800742D823946D7A70BE /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
-		CD11EC5F1EE30F9B0012F88F /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CD2D10CB1ECAE0E20011803D /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		CD454EA61EDF1DC800EB6E92 /* addressbook.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addressbook.proto; sourceTree = "<group>"; };
@@ -224,7 +222,6 @@
 				CDA643DF1EE2BEEE0082FC23 /* FristViewController.swift */,
 				CDA643E11EE2BF070082FC23 /* FirstSubViewController.swift */,
 				CDA643E31EE2BF140082FC23 /* StoryViewController.swift */,
-				CD11EC5F1EE30F9B0012F88F /* CameraView.swift */,
 				CD898C811EE5558600DCE834 /* AuthorizedManager.swift */,
 				CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */,
 			);
@@ -496,13 +493,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hospital-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE3E8791AD1D8386F39CC61B /* [CP] Embed Pods Frameworks */ = {
@@ -511,9 +511,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hospital/Pods-Hospital-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -542,7 +557,6 @@
 				CD2D10CC1ECAE0E20011803D /* ImagePickerVC.swift in Sources */,
 				CDB8B4B81EA387C1009680F2 /* Hospital.xcdatamodeld in Sources */,
 				CD6F36271EA4C4C900EF77DC /* NetworkRequst.swift in Sources */,
-				CD11EC601EE30F9B0012F88F /* CameraView.swift in Sources */,
 				CDD2ABED1EC1B1C500CEDFB3 /* DefaultImplement.swift in Sources */,
 				CD6F362F1EA4C6DD00EF77DC /* NewsHomeVM.swift in Sources */,
 				CDD2ABE71EC1751000CEDFB3 /* GithubSignupViewModel.swift in Sources */,
