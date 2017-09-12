@@ -91,6 +91,7 @@
 		CDD2ABEA1EC1AF5300CEDFB3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		CDD2ABEC1EC1B1C500CEDFB3 /* DefaultImplement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultImplement.swift; sourceTree = "<group>"; };
 		CDD2ABEE1EC1B30E00CEDFB3 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CDED537C1F611605001AA9A2 /* Rx.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Rx.playground; sourceTree = "<group>"; };
 		CDFB150D1EA3BBCA00D89C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +225,7 @@
 				CDA643E31EE2BF140082FC23 /* StoryViewController.swift */,
 				CD898C811EE5558600DCE834 /* AuthorizedManager.swift */,
 				CD3AA09C1EE5BD120018F780 /* AuthorizationVC.swift */,
+				CDED537C1F611605001AA9A2 /* Rx.playground */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
